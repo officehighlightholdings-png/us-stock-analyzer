@@ -86,8 +86,8 @@ def base_layout(fig: go.Figure, title: str, y_title: str = ""):
         title=title,
         height=430,
         hovermode="x unified",
-        margin=dict(l=10, r=10, t=50, b=10),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
+        margin=dict(l=10, r=10, t=50, b=60),
+        legend=dict(orientation="h", yanchor="top", y=-0.12, x=0),  # 圖例放在圖表下方，避免和標題重疊
         yaxis_title=y_title,
     )
     return fig
